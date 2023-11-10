@@ -38,3 +38,77 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --background-gradient-start: hsl(252, 100%, 67%);
+  --background-gradient-end: hsl(241, 81%, 54%);
+
+  --circle-gradient-start: hsla(256, 72%, 46%, 1);
+  --circle-gradient-end: hsla(241, 72%, 46%, 0);
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(221, 100%, 96%);
+  --neutral-400: hsl(241, 100%, 89%);
+  --neutral-800: hsl(224, 30%, 27%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+}
+
+.section-score {
+  background-image: linear-gradient(
+    var(--background-gradient-start),
+    var(--background-gradient-end)
+  );
+
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--neutral-400);
+  padding: 2.2em 4em;
+  border-radius: 0px 0px 32px 32px;
+  text-align: center;
+}
+
+.primary-text {
+  color: var(--neutral-100);
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+p.primary-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.section-score span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.circle {
+  background-image: linear-gradient(
+    var(--circle-gradient-start),
+    var(--circle-gradient-end)
+  );
+
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  aspect-ratio: 1;
+  justify-content: center;
+
+  border-radius: 100%;
+}
