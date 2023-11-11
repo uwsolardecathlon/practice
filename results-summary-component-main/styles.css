@@ -44,6 +44,11 @@ h6 {
   --orange-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
+  
+  --light-red-trans: hsl(0, 100%, 67%, 0.1);
+  --orange-yellow-trans: hsl(39, 100%, 56%, 0.1);
+  --green-teal-trans: hsl(166, 100%, 37%, 0.1);
+  --cobalt-blue-trans: hsl(234, 85%, 45%, 0.1);
 
   --background-gradient-start: hsl(252, 100%, 67%);
   --background-gradient-end: hsl(241, 81%, 54%);
@@ -111,4 +116,94 @@ p.primary-text {
   justify-content: center;
 
   border-radius: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  padding: 0px;
+}
+
+.section-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.section-summary li, .section-summary li div {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-summary li div {
+  gap: 0.5em;
+}
+
+.section-summary li span {
+  font-weight: 700;
+}
+
+.section-summary li {
+  gap: 8em;
+  justify-content: space-between;
+  border-radius: 10px;
+  
+  padding: 0.7em 1em 0.7em;
+  font-size: 1.8rem;
+}
+
+.section-summary .heading {
+  align-self: flex-start;
+  margin-left: 1.3em;
+}
+
+.section-summary button {
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  margin-top: 0.7em;
+  color: white;
+  background-color: var(--neutral-800);
+  border-radius: 28px;
+  border-color: transparent;
+}
+
+.section-reaction div{
+  color: var(--light-red);
+}
+
+.section-memory div{
+  color: var(--orange-yellow);
+}
+
+.section-verbal div{
+  color: var(--green-teal);
+}
+
+.section-visual div{
+  color: var(--cobalt-blue);
+}
+
+
+
+
+.section-reaction {
+  background-color: var(--light-red-trans);
+}
+
+.section-memory {
+  background-color: var(--orange-yellow-trans);
+}
+
+.section-verbal {
+  background-color: var(--green-teal-trans);
+}
+
+.section-visual {
+  background-color: var(--cobalt-blue-trans);
 }
