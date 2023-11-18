@@ -86,6 +86,12 @@ body {
 
 .heading {
   font-size: 2rem;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  color: var(--neutral-800);
+  padding: 1em 2em;
+  text-align: start;
 }
 
 p.primary-text {
@@ -111,4 +117,112 @@ p.primary-text {
   justify-content: center;
 
   border-radius: 100%;
+}
+
+.reaction {
+  background-color: #fadede;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--light-red);
+  text-align: center;
+}
+
+.left-align1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-align1 {
+  margin-left: 9em;
+  color: var(--neutral-400);
+}
+
+.right-align1 span {
+  color: var(--neutral-800);
+}
+
+.memory {
+  background-color: rgb(238, 211, 161);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--orange-yellow);
+  text-align: center;
+}
+
+.left-align2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-align2 {
+  margin-left: 9em;
+  color: var(--neutral-400);
+}
+
+.right-align2 span {
+  color: var(--neutral-800);
+}
+
+.verbal {
+  background-color:#d1dbb6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--green-teal);
+  text-align: center;
+}
+
+.left-align3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-align3 {
+  margin-left: 9em;
+  color: var(--neutral-400);
+}
+
+.right-align3 span {
+  color: var(--neutral-800);
+}
+
+.visual {
+  background-color:#e0cff1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--cobalt-blue);
+  text-align: center;
+}
+
+.left-align4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-align4 {
+  margin-left: 9em;
+  color: var(--neutral-400);
+}
+
+.right-align4 span {
+  color: var(--neutral-800);
 }
